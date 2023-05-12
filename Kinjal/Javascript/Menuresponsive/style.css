@@ -1,0 +1,38 @@
+div{
+    height: 70px;
+    background-color: gray;
+    width: 100%;
+}
+ul{
+    margin: auto;
+    
+}
+li{
+    margin: auto;
+    list-style: none;
+    display: inline;
+    padding: 10px 50px;
+    font-size: 30px;
+    line-height: 20px;
+}
+span i{
+    font-size: 25px;
+    visibility: hidden;
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 500px){
+    ul{
+        background-color: gray;
+        
+    }
+    li{ 
+        display: block;
+        width: 100%;
+        padding: 30px 0px;
+    }
+    span i{
+        margin-top: 20px;
+        visibility: visible;
+    }
+}
