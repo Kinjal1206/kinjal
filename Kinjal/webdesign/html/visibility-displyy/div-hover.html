@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover</title>
+    <style>
+        /* .main{
+            position: relative;
+        } */
+        .aa{
+            height: 100px;
+            width: 100px;
+            background-color: pink;
+            position: relative;
+        }
+        .bb{
+            height: 100px;
+            width: 100px;
+            background-color: red;           
+            position: absolute;
+            display: none;
+        }
+        .aa:hover + .bb{
+            top:150px;
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+    
+        <div class="aa"></div>
+        <div class="bb"></div>
+    
+   
+</body>
+</html>

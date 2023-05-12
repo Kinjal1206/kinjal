@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover underline</title>
+    <style>
+        div{
+            height: 50px;
+            width: 100%;
+            text-align: center;
+            background-color: aliceblue;
+        }
+        li{
+            list-style: none;
+            display: inline;
+            padding: 20px 50px;
+            text-decoration: underline;
+            text-decoration-thickness: 5px;
+            line-height: 50px;
+            transition-timing-function: linear;
+        }
+        a{
+            transition:  5s;
+            color: black;
+            font-size: 30px;
+        }
+        a:hover{
+            color: green;
+        }
+        .main{
+            display: flex;
+        }
+        .k{
+            margin: auto;
+            padding: 5px;
+            text-decoration: none;
+            position: relative;
+        }
+        .k::after{
+            content: '';
+            position: absolute;
+            background-color: blue;
+            height: 5px;
+            width: 0;
+            left: 0;
+            bottom: -10px;
+            transition: 3s;
+        }
+        .k:hover::after{
+            width: 100%;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li><a href="#">Home</a></li>
+        
+            <li><a href="#">About Us</a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=7201967051&text=Hello....">Contat</a></li>
+            <li><a href="#">Products</a></li>
+
+        </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="main">
+        <a class="k" href="#">Home</a>
+        <a class="k" href="#">About Us</a>
+        <a class="k" href="#">Products</a>
+        <a class="k" href="#">Contact</a>
+    </div>
+</body>
+</html>

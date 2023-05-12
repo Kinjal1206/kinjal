@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            
+            margin: 20px;
+            padding: 20px;
+        }
+        .a:hover{
+            background-color: aqua;
+        }
+        a{
+            text-decoration: none;
+            font-size: 50px;
+            
+        }
+        a:hover{
+            color: lightsalmon;
+        }
+        a:active{
+            color: lightseagreen;
+        }
+        a:visited{
+            color: lightgreen;
+        }
+        div div{
+            font-size: 25px;
+            background-color: lightblue;
+        }
+        div div:nth-child(even):hover{
+            background-color: lightcoral;
+            text-decoration: underline;
+        }
+        div div:nth-child(odd):hover{
+            background-color: brown;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div class="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem necessitatibus, sunt veritatis doloremque blanditiis voluptatum enim non dignissimos? Assumenda at rerum quidem vero a officiis iste. Est minima dolores provident.</div>
+    <div class="b"><a href="https://www.google.com/">google hover</a></div>
+    <div class="c"><a href="https://www.google.com/">google active</a></div>
+    <div class="d"><a href="https://www.google.com/">google focus</a></div>
+    <div class="e"><a href="https://www.google.com/">google visited</a></div>
+    <div class="main">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, nobis. </div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, nobis. </div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, nobis. </div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, nobis. </div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, nobis. </div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, nobis. </div>
+    </div>
+  </body>
+</html>

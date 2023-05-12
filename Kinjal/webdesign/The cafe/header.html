@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 600px;
+            width: 100%;
+        }
+        img{
+            height: 600px;
+            width: 100%;
+            opacity: 0.7;
+            position: relative;
+        }
+        .menu{
+            height: 60px;
+            width: 100%;
+            position: absolute;
+            z-index: 1;
+            text-align: center;
+            
+        }
+        li{
+            color: white;
+            list-style: none;    
+            text-align: center;
+            display: inline;
+            padding: 2px 100px;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            line-height: 60px;
+            font-size: 30px;
+            position: relative;
+            
+        }
+        a::after{
+            content: '';
+            position: absolute;
+            background-color: white;
+            height: 2px;
+            bottom: -0px;
+            width: 0;
+            left: 0;
+            transition: 3s;
+        }
+        a:hover::after{
+            width: 100%;
+
+        }
+        .text{
+            position: absolute;
+            z-index: 1;
+            width: 470px;
+            height: 100px;
+            /* background-color: red; */
+            color: white;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-shadow: 10px 20px 10px black;
+            font-size: 120px;
+            top: 250px;
+            left: 700px;
+            /* right:-150px; */
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Where</a></li>
+            </ul>
+        </div>
+        <div class="text">the cafe</div>
+        <img src="images/front.jpg" alt="">
+    </div>
+</body>
+</html>

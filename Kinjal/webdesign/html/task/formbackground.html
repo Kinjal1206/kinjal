@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .menu{
+            height: 60px;
+            width: 100%;
+            background-color: black;
+            color: cadetblue;
+            display: flex;
+        }
+        P{
+            line-height: 50PX;
+            margin-left: 200PX;
+            font-size: 30px;
+            
+        }
+        ul{
+            margin-left: 200px;
+        }
+        li{
+            list-style: none;
+            display: inline;
+            font-size: 15px;
+            margin: 10px;
+            line-height: 85px;
+            padding: 10px;
+            background-color: antiquewhite;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        li a{
+            text-decoration: none;
+            color: cadetblue;
+        }
+        .img{
+            margin-left: 250px;
+            width: 80%;
+            margin: auto;
+        }
+        img{
+            height: 400px;
+            width: 100%;
+        }
+        .form-back{
+            height: auto;
+            padding: 20px;
+            background-color: cadetblue;
+            
+        }
+        .form{
+            padding: 20px;
+            height: auto;
+            width: 60%;
+            margin: auto;
+            border: 2px solid blue;
+            border-radius: 5px ;
+            
+        }
+        .login-text{
+            font-size: 30px;
+            margin-left: 350px;
+            color: seagreen;
+        }
+        input{
+            display: block;
+            height: 30px;
+            width: 300px;
+            margin-left: 230px;
+            margin-top: 10px; 
+        }
+        button{
+            width: 90%;
+            height: 30px;
+            display: block;
+            margin: auto;
+            color: white;
+            background-color: blue;
+            border: none;
+            margin-top:10px;
+            border-radius: 5px;
+        }
+        .reg-text{
+            margin-left: 200px;
+            margin-top: 20px;
+            margin-bottom: 0px;
+        }
+        .reg-text1, .reg-text2{
+            font-size: 20px;
+            display: inline;
+            margin: 10px;
+        } 
+        .reg-text2 a{
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="menu">
+            <p class="logo">Online Exam</p>
+            <ul>
+                <li>HOME</li>
+                <li><a href="registration.html">REGISTRATION</a></li>
+                <li>QUIZ</li>
+                <li>FEEDBACK</li>
+                <li>LOG OUT</li>
+            </ul>
+        </div>
+        <div class="img">
+            <img src="C:\hard disk\Kinjal\frontend\webdesign\html\images\student.jpg" alt="">
+        </div>
+        <div class="form-back">
+            <div class="form"> 
+                <p class="login-text">LOGIN</p>
+                <form action="">
+                    <input type="text" placeholder="User Name">
+                    <input type="password" placeholder="Password">
+                    <button>Login</button>
+                    <div class="reg-text">
+                    <p class="reg-text1">Create new account?</p>
+                    <p class="reg-text2"><a href="registration.html">Registration here</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
